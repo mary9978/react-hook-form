@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+@layer components{
+    .link{
+      @apply hidden lg:flex justify-end font-nunito font-normal text-sm text-gray-500;
+    }
+    .btn{
+      @apply w-full my-4 py-2 bg-blue-600 rounded-md text-white shadow-xl hover:bg-white hover:text-blue-500 hover:ring-1 hover:ring-blue-500 cursor-pointer transition-all duration-300 font-nunito font-bold;
+    }
+    .input{
+      @apply w-full shadow-none focus:shadow-none border-none outline-none focus:outline-none   focus:ring-0 focus:border-none form-input  text-gray-400 rounded-lg  bg-white;
+    }
+    .error{
+      @apply inline-block w-2/4 text-left text-xs text-red-400 font-nunito font-normal ms-1 mt-1;
+    }
+    .container-style{
+      @apply   bg-gray-300 flex items-center justify-center h-screen;
+    }
+    .form-grid{
+      @apply grid grid-cols-1 lg:grid-cols-2 bg-gray-200 rounded-xl p-2;
+    }
+}
+
+
+
+

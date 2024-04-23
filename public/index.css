@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: Nunito;
+  src: url(/public/fonts/nunito/Nunito-Medium.ttf);
+}
+@font-face {
+  font-family: NunitoBold;
+  src: url(/public/fonts/nunito/Nunito-ExtraBold.ttf);
+}
+
+
+
